@@ -200,7 +200,7 @@ char alphabet_()
 
 }
 void return_book(){
-    cout<<": Enter the book name :        : if you forgot the book name enter 'Taken_books : "<<endl;
+    cout<<": Enter the book name :        : If you forgot the book name enter 'Taken_books :        :If no book to return enter any key... "<<endl;
     cin.ignore();
     getline(cin, return_books);
     if(return_books == "Taken_books" || return_books == "taken_books")
@@ -281,6 +281,12 @@ void return_book(){
     else
     cout<<endl<<"   E r r o r    R e t u r n i n g    T h e    B o o k !    "<<endl;
     }
+    string whether;
+    cout<<endl<<"\nDO you want to take another book(yes/no) "<<endl;
+    cin>>whether;
+    if(whether == "yes" || whether == "Yes")
+    Available_books();
+    
 }
 void Available_books(){
 
@@ -298,8 +304,11 @@ void Available_books(){
                          cout<<"          P R E S S   E N T E R  "<<endl<<endl;
 
                         system("pause");
-                        }
-                         cout<<"\t    *"<<Available_books<<"\n"<<endl;
+                        } 
+                         cout<<endl<<"\t _________________________________________________________________________________________________"<<endl;
+                         cout<<"\t|                                                                                                 |"<<endl;
+                         cout<<"\t -------"<<Available_books<<"----"<<endl;
+                         cout<<"\t|_________________________________________________________________________________________________|"<<endl<<endl;
                          j++;
                         
                      }
@@ -410,7 +419,10 @@ void search(){
                          }
                            if(k==1)
                          {
-                             cout<<Available_books<<endl;
+                             cout<<endl<<"\t _________________________________________________________________________________________________"<<endl;
+                         cout<<"\t|                                                                                                 |"<<endl;
+                         cout<<"\t -------"<<Available_books<<"----"<<endl;
+                         cout<<"\t|_________________________________________________________________________________________________|"<<endl<<endl;
                              
                          }
                          
@@ -656,8 +668,7 @@ void intro(){
         signup();
 }
 int main()
-{ 
-    
+{  
   cout<<endl<<"*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*"<<endl;
   cout<<endl<<"                              Created by: S r i t h i n   A  V"<<endl<<endl;
   cout<<"                              linkedin  : S r i t h i n   A  V"<<endl<<endl;
